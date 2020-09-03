@@ -3,9 +3,11 @@
 class Crypto{
 
     public $title;
+    public $inStock = true;
 
     public function __construct($title) {
         $this->title =$title;
+
     } 
 
 }
