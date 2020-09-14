@@ -37,6 +37,15 @@ class Book {
         return $stmt->execute(['id' => $this->id]);
 
     }
+    public function edit() {
+
+        global $pdo;
+
+        $stmt = $pdo->prepare('EDIT FROM books WHERE title=:title');
+
+        return $stmt->execute(['id' => $this->id]);
+
+    }
 }
 
 
