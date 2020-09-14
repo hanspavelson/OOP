@@ -1,5 +1,7 @@
 <?php
 
+require_once 'dbconnect.php';
+
 class BookAuthor {
 
     public static function findAllByBookId($bookId) {

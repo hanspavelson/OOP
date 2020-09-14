@@ -1,6 +1,7 @@
 <?php
 
-require_once 'autoload.php';
+require_once 'models/Book.php';
+require_once 'models/BookAuthor.php';
 
 $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 
